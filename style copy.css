@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet');
+
+html,
+body {
+    height: 100%;         /* высота  */
+}
+
+.greetings,
+p,
+h1, 
+h2 {
+    font-family: 'Noto Serif JP', serif;       /* семейство шрифтов */
+}
+
+.flex-container {
+    display: flex;             /* технология flexbox */
+    flex-direction: column;    /* размещение боксов вертикально */
+    margin: auto;              /* чтобы отцентрировать блочный элемент по горизонтали (но без 0)(было margin: 0 auto;) */
+    max-width: 1200px;           /* ширина  */
+    background-color: #E6E6E6;    /* цвет фона элемента */
+    padding: 5px;               /* поля для элемента, здесь все четыре поля(стороны) */
+    height: 100%;                /* высота */
+}
+
+.header {
+    display: flex;                  /* см.выше */
+    align-items: center;           /* элементы центрируются относительно друг друга (к центру) */
+    justify-content: space-between;   /* определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси flex контейнера, или вдоль строчной оси grid контейнера */
+    height: 25%;                    /* см.выше */
+    margin-bottom: 3em;         /* Задает высоту области содержимого, области заполнения или области границ (в зависимости от "размера поля") определенных полей. */
+    background-color: #CED8F6;      /* см.выше */
+}
+
+ul  {
+    display: flex;      /* см.выше */
+    list-style-type: none; /* задает маркер (например, диск, символ или пользовательский стиль счетчика) элемента списка. */
+}
+
+ul li {
+    margin-right: 20px;      /* устанавливает внешний отступ справа от элемента */
+}
+
+li a {
+    text-decoration: none;      /* задает внешний вид декоративных линий в тексте */
+    font-family: 'Noto Serif JP', serif;      /* см.выше */
+    font-size: 1.5rem;      /* определяет размер шрифта */
+    color: #848484;      /*  */
+    font-weight: 800;     /* задает вес (или жирность) шрифта */
+}
+
+.logo img {
+    width: 70px;    /* ширина */
+    height: 70px;    /* высота */
+    margin-left: 10px;    /* устанавливает внешний отступ слева от элемента */
+}
+
+.about_me {
+    display: flex;    /* см.выше */
+    flex-direction: column;    /* см.выше */
+    flex: 1 0 auto;    /* гибкого элемента */
+}
+
+.data {
+    display: flex;    /* см.выше */
+    align-items: center;    /* см.выше */
+}
+
+.fullname {
+    margin-right: 20px;    /* см.выше */
+    flex-basis: 750px;    /*  задаёт базовый размер флекс элемента по основной оси */
+}
+
+.img
+{
+    border-radius: 50%;    /* свойство, позволяющее разработчикам определять, как скругляются границы блока */
+    width: 150px;    /*  */
+}
+
+.myImg {
+    margin-top: 150px;    /*  */
+    padding-left: 20px;    /*  */
+    flex-basis: 450px;    /*  */
+}
+
+.knowledge {
+    display: block;       /*  */
+    justify-content: center;    /*  */
+}
+
+.article {
+    margin-top: 2em;       /*  */
+}
+
+p {
+    font-size: 1.2rem;    /*  */
+    color: #08298A;    /*  */
+    margin: left;    /*  */
+    width: 50%;    /*  */
+    padding-right: 20px;    /*  */
+    padding-left: 20px;    /*  */
+}
+
+p1 {
+    font-size: 1.rem;    /*  */
+    color: #08298A;    /*  */
+    margin: left;    /*  */
+    width: 50%;    /*  */
+    padding-right: 15px;    /*  */
+    padding-left: 15px;    /*  */
+}
+
+.text {
+    font-size: 1rem;    /*  */
+    color: #585858;    /*  */
+}
+
+h2 {
+    text-align: center;    /* text-align: right;  */
+    color: #424242;    /*  */
+}
+
+h1 {
+    color: #08298A;    /*  */
+    text-align: left;  /* Было right */
+    font-size: 2rem;    /*  */
+    align-content: center;  /* Было right */
+}
+
+.footer {
+    background-color: #5882FA;    /*  */
+    flex: auto;    /* flex: 0 0 auto;  */
+}
